@@ -63,7 +63,7 @@ MinMax findMinMax_v2(...) {
 	return {};
 }
 
-void readValues_v3(...) {
+void readValues_v3(span<int> values) {
 	
 }
 
@@ -90,7 +90,7 @@ void runCompetitionExample() {
 		     << "Min: " << minmaxValues.min << "\n"
 		     << "Max: " << minmaxValues.max << "\n";
 	}
-	return;
+	
 	// Utilisation des *_v2
 	{
 		vector<int> values = {}; // TODO

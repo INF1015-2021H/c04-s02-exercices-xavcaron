@@ -18,7 +18,7 @@ using iter::range;
 
 
 void run1DDynamicArrayExample() {
-	// Déclaration d'un tableau d'entiers à une dimension.
+	// Déclaration d'un tableau dynamique d'entiers à une dimension.
 	int* array;
 	// Attribution d’un tableau de 150 entiers.
 	array = new int[150];

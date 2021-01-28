@@ -24,14 +24,14 @@ using namespace std;
 
 
 int main() {
-	cout << "Parameters example:" << "\n";
-	runParamsExample();
-	cout << string(50, '-') << "\n";
+	//cout << "Parameters example:" << "\n";
+	//runParamsExample();
+	//cout << string(50, '-') << "\n";
 
-	cout << "Competition example:" << "\n";
-	runCompetitionExample();
-	cout << string(50, '-') << "\n";
-	
+	//cout << "Competition example:" << "\n";
+	//runCompetitionExample();
+	//cout << string(50, '-') << "\n";
+	//
 	cout << "1D dynamic arrays example:" << "\n";
 	run1DDynamicArrayExample();
 	cout << string(50, '-') << "\n";
