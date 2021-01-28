@@ -18,16 +18,37 @@ using namespace std;
 using iter::range;
 
 
-void readValues_v1(...) {
-	
+void readValues_v1(int values[], int numValues) { // values est un parametre out
+	cout << "Enter grades" << "\n";  
+	for (int i = 0; i < numValues; i++) {
+		cin >> values[i];
+	}
 }
 
-int getTotalGrade_v1(...) {
-	return {};
+int getTotalGrade_v1(const int values[], int numValues) {
+	int minVal = values[0];
+	int maxVal = values[0];  // initialiser a premi"ere valeur du tableau
+	int total = 0;
+	for (int i = 0; i < numValues; i++) {
+		total += values[i];
+	};
+	MinMax minmax = findMinMax_v1(values, numValues);
+
+	return total - minmax.min - minmax.max;
 }
 
-MinMax findMinMax_v1(...) {
-	return {};
+MinMax findMinMax_v1(const int values[], int numValues) {
+	int minVal = values[0];
+	int maxVal = values[0];  // initialiser a premi"ere valeur du tableau
+	for (int i = 0; i < numValues; i++) {
+		if (values[i] < minVal) {
+			minVal = values[i];
+		}
+		if (values[i] > maxVal) {
+			maxVal = values[i];
+		}
+	}
+	return {minVal, maxVal};
 }
 
 /*TODO*/void readValues_v2(...) {
@@ -69,6 +90,7 @@ void runCompetitionExample() {
 		     << "Min: " << minmaxValues.min << "\n"
 		     << "Max: " << minmaxValues.max << "\n";
 	}
+	return;
 	// Utilisation des *_v2
 	{
 		vector<int> values = {}; // TODO

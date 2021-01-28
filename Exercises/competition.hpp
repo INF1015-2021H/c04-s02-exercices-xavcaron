@@ -20,11 +20,11 @@ struct MinMax {
 };
 
 
-void readValues_v1(...);
+void readValues_v1(int values[], int numValues);
 
-int getTotalGrade_v1(...);
+int getTotalGrade_v1(const int values[], int numValues);
 
-MinMax findMinMax_v1(...);
+MinMax findMinMax_v1(const int values[], int numValues);
 
 int getTotalGrade_v2(...);
 
